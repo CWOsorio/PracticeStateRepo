@@ -1,8 +1,11 @@
-export default () => `
+export default (links) => `
 <nav>
-    <i class="fa-bars"></i>
+    <i class="fas fa-bars"></i>
     <ul class="hidden--mobile nav-links">
-      <li><a href="#bio">Bio</a></li>
-      <li><a href="#gallery">Gallery</a></li>
+      ${links.map(
+        link =>
+        `<li><a href="/${link.title}" title="${link.title}" data-navigo>${link.text}</a></li>`
+      )}
     </ul>
-  </nav>`;
+  </nav>
+  `;
