@@ -6,7 +6,9 @@
   "scripts": {
     "parcel-build": "parcel build index.html && cp _redirects ./dist",
     "serve": "parcel index.html",
-    "server:watch": "nodemon --watch ./server -e js ./server/index.js"
+    "server:watch": "nodemon --watch ./server -e js ./server/index.js",
+    "start": "node ./server/index.js"
+
   },
   "keywords": [],
   "author": "",
@@ -27,6 +29,7 @@
     "axios": "^0.22.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "html-literal": "^1.1.0",
     "lodash": "^4.17.21",
     "mongoose": "^6.0.11",
     "navigo": "^7.1.3",
